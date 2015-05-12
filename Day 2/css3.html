@@ -1,0 +1,41 @@
+CSS3
+
+1.Responsive Design
+	a. Fluid layout
+	b. media query -> tell browser to use special css according to size
+	c. Touch Interfaces -> no mouse hover
+	d. Viewport Orientation ->use vmin or vmax
+
+2. Advanced Selectors
+	a. Pseudo Elements & Classes
+		*::selection { background: #eee; } /* Pseudo-element (when selected)*/
+        a:hover { color: #c00; }           /* Pseudo-class (when hover)  */
+	b. Relation Combination
+		nav h1 { font-weight: normal; }    /* Descendant */
+        ul > li { font-style: italic; }    /* Directly Child */
+        h1 + p { font-weight: bold; }      /* Sibling */
+        a.portal { font-size: 1.5rem; }    /* Specificity class */
+	c. Media Query
+		@media print {
+			body { backgorund: #fff; }
+        }
+        @media screen and (max-width: 800px) {
+			nav ul { display: block; }
+        }
+        @media screen and (min-aspect-ratio: 1/1) {
+			/* Apply rules for landscape orientation */
+        }
+3. Advanced Layout
+		a. Display
+		nav {
+			display: flex;
+            flex-direction: row;
+        }
+        .portal { display: inline-block; }
+		
+		b. Position
+			nav {
+				top: 0;
+                position: fixed;
+            }
+		
