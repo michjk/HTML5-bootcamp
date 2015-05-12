@@ -3,19 +3,30 @@ body {
 	background-color: rgba(200, 200, 20, 0.5);
 }
 
+nav {
+	display: flex;
+	text-align:center;
+	flex-direction:column;
+}
 #header {
 	text-align : center;
 }
 
-#headshot{
-
-	height:280px;
-	padding: 10px;
-	background-color: #ffffff;
-	border: 1px solid #333;
+section {
+	margin: 5rem auto;
+	padding-top:1rem;
+	border-top: 1px solid #333;
 }
 
-#myMajor {
+.headshot{
+	height:140px;
+	padding: 10px;
+	margin: 2rem;
+	float:left;
+	background-color: #ffffff;
+}
+
+.myMajor {
 	font-style:italic;
 	text-decoration:underline;
 }
