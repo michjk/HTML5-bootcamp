@@ -1,0 +1,51 @@
+WEBAPIs
+
+1. Storage
+	localStorage & sessionStorage
+	a. Stores key-value pairs
+	b. Synchronous API, no callbacks
+	c. Work very similar to regular JS Objects
+	d. Stores in file, instead of memory
+
+2. localStorage
+	a. setting items
+	 localStorage.setItem("myKey", "myValue");
+
+    // or
+
+    localStorage.myKey = "myValue";
+	
+	b. getting items
+	var data = localStorage.getItem("myKey");
+
+    // or
+
+    var data = localStorage.myKey;
+    
+	c. Removing items
+	
+	localStorage.removeItem("myKey");
+	
+	//or
+	
+	delete localStorage .myKey;
+	
+	d. Removing all items
+	localStorage.clear()
+	
+	e. How many items
+	var length  = localStorage.length();
+	
+	
+3. WHAT'S THE DEAL?
+	Session Storage	              	Local Storage
+	Survives page refresh         	Survives browser close
+    Short life span				  	Longer life span
+	Shopping carts					Breadcrumbs
+	Navigation history				Game high score
+Search history
+Access log
+Stored client side. User can clear data.
+Synchronous API. Blocks UI.
+
+4. 
