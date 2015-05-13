@@ -1,0 +1,160 @@
+@-webkit-keyframes hueRotation {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	
+	}
+	to {
+		-webkit-filter: hue-rotate(360deg);
+		
+	}
+}
+
+@keyframes hueRotation {
+	from {
+		filter: hue-rotate(0deg);
+	
+	}
+	to {
+		filter: hue-rotate(360deg);
+		
+	}
+}
+
+@-webkit-keyframes spinY {
+	from {
+		transform: rotateY(0deg);
+		
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes spinY {
+	from {
+		transform: rotateY(0deg);
+		
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+@-webkit-keyframes shrink {
+	from {
+		transform: scale(1) rotateZ(0deg);
+	}
+	to {
+		transform: scale(0.5) rotateZ(360deg);
+	}
+}
+
+@keyframes shrink {
+	from {
+		transform: scale(1) rotateZ(0deg);
+	}
+	to {
+		transform: scale(0.5) rotateZ(360deg);
+	}
+}
+
+/*img:nth-child(1) {
+	border: 1px solid red;
+}*/
+
+img:first-child {
+	border: 1px solid red;
+}
+
+#michael {
+	-webkit-animation-name:hueRotation;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-timing-function : linear;
+	animation-name:hueRotation;
+	animation-duration: 5s;
+	animation-iteration-count : infinite;
+	animation-timing-function : linear;
+}
+
+#fb:hover {
+	-webkit-animation-name : spinY;
+	-webkit-animation-duration: 1s;
+	animation-name : spinY;
+	animation-duration: 1s;
+}
+
+#fc:hover{
+	-webkit-animation-name: shrink;
+	-webkit-animation-duration : 2s;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-iteration-count : infinite;
+	-webkit-animation-timing-function : linear;
+	animation-name: shrink;
+	animation-duration : 2s;
+	animation-direction:alternate;
+	animation-iteration-count : infinite;
+	animation-timing-function : linear;
+}
+
+
+
+html {
+	font-size: 16px;
+}
+
+body {
+	//background-color : yellow;
+	background-color: rgba(200, 200, 20, 0.5);
+}
+
+nav {
+	display: flex;
+	text-align:center;
+	flex-direction:column;
+}
+
+nav h2 {
+ font-size: 3rem;
+
+}
+
+section {
+	margin: 5rem auto;
+	padding-top:1rem;
+	border-top: 1px solid #333;
+}
+
+.headshot{
+	height:140px;
+	padding: 0.5rem;
+	margin: 2rem;
+	float:left;
+	background-color: #ffffff;
+}
+
+.myMajor {
+	font-style:italic;
+	text-decoration:underline;
+}
+
+#inputBox {
+	clear:both;
+	margin-left : 2rem;
+}
+	
+
+#messageBox {
+	margin-top: 10px;
+	min-height: 50px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 5px;
+}
+
+@media screen and (max-width: 800px)
+{
+	nav h2 {
+		font-size: 2rem;
+	}
+}

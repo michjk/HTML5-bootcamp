@@ -1,0 +1,31 @@
+SVG
+	1. Scalable Vector Graphics
+		<svg>
+			<rect width="200px" height="100px" fill="blue" stroke="red"/>
+			
+			<circle cx="400px" cy"100px" r="100px" fill="green" stroke="orange"/>
+			
+		</svg>
+		
+	2. Benefits
+		Easy to scale image.
+		Stored in XML derivative can be searched, indexed, scripted.
+		Retained more graphics.
+	
+	3. Programmatically creating SVG
+		Separate namespace http://www.w3.org/2000/svg vs XHTML's http://www.w3.org/1999/xhtml. 
+		<svg id="slide4SVG"></svg>
+        <script>
+			var ns = "http://www.w3.org/2000/svg";
+            var circle = document.createElementNS(ns, "circle");
+            circle.setAttribute("fill", "lime");
+            circle.setAttribute("r", "25");
+            circle.setAttribute("cx", "50%");
+            circle.setAttribute("cy", "50%");
+            document.getElementById("slide4SVG").appendChild(circle);
+        </script>
+
+Canvas
+
+WebGL
+		

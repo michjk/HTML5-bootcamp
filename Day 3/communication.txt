@@ -1,0 +1,19 @@
+COMMUNICATION APIS
+
+Cross Document Messaging 
+
+	var win = window.open("a.com");
+	win.postMesage("hello sia");
+	
+	window.onmessage = function (e) {
+		if (e.origin != 'b.com')
+		{
+			return;
+			
+		}
+		console.log("received message " + event.data);
+	}
+
+Network Req
+	A browser makes request via HTTP
+
