@@ -50,9 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		
 		inputBox.addEventListener('keyup', function (e) {
 			if (e.keyCode === 13) {
-				
-				while (true)
-					addMessage('text');
+				addMessage('text');
 			}
 		});
 		picButton.addEventListener('click', function () {
